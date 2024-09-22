@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-base-project 
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bookStore
+    username: postgres
+    password: changeme
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: 'true'
